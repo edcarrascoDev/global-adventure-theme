@@ -8,13 +8,29 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "Industrias Qatar",
+            "link": ""
+          }
+        },
+        "f9d4c246-391d-4dfe-b845-364dc01fdc86": {
+          "type": "announcement",
+          "settings": {
+            "text": "Fabbri",
+            "link": ""
+          }
+        },
+        "b30dbd60-2edf-470f-b2f1-4e2456aa142e": {
+          "type": "announcement",
+          "settings": {
+            "text": "Global Racks",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "f9d4c246-391d-4dfe-b845-364dc01fdc86",
+        "b30dbd60-2edf-470f-b2f1-4e2456aa142e"
       ],
       "settings": {
         "color_scheme": "background-1",
