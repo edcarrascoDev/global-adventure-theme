@@ -158,10 +158,10 @@
       },
       "inverse": {
         "settings": {
-          "background": "#242833",
+          "background": "{{ shop.brand.colors.secondary[0].background }}",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
+          "text": "{{ shop.brand.colors.secondary[0].foreground }}",
+          "button": "{{ shop.brand.colors.secondary[0].foreground }}",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"

@@ -33,7 +33,7 @@
         "b30dbd60-2edf-470f-b2f1-4e2456aa142e"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "show_line_separator": true,
         "show_social": true,
         "enable_country_selector": false,
