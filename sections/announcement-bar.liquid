@@ -55,7 +55,7 @@
                     >
                   {%- endif -%}
                   {%- if block.settings.company_logo -%}
-                    {{ block.settings.company_logo | image_url: width: 100 | image_tag }}
+                    {{ block.settings.company_logo | image_url: height: 20 | image_tag }}
                   {% else %}
                     <p class="announcement-bar__message h5">
                       <span>{{ block.settings.text | escape }}</span>
