@@ -8,29 +8,32 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
+            "color_scheme": "qatar-2",
             "text": "Industrias Qatar",
-            "link": ""
-          }
-        },
-        "f9d4c246-391d-4dfe-b845-364dc01fdc86": {
-          "type": "announcement",
-          "settings": {
-            "text": "Fabbri",
             "link": ""
           }
         },
         "b30dbd60-2edf-470f-b2f1-4e2456aa142e": {
           "type": "announcement",
           "settings": {
+            "color_scheme": "company-3",
             "text": "Global Racks",
+            "link": ""
+          }
+        },
+        "f9d4c246-391d-4dfe-b845-364dc01fdc86": {
+          "type": "announcement",
+          "settings": {
+            "color_scheme": "company-2",
+            "text": "Fabbri",
             "link": ""
           }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "f9d4c246-391d-4dfe-b845-364dc01fdc86",
-        "b30dbd60-2edf-470f-b2f1-4e2456aa142e"
+        "b30dbd60-2edf-470f-b2f1-4e2456aa142e",
+        "f9d4c246-391d-4dfe-b845-364dc01fdc86"
       ],
       "settings": {
         "color_scheme": "inverse",
