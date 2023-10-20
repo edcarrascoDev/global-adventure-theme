@@ -8,8 +8,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "color_scheme": "background-1",
-            "company_logo": "shopify:\/\/shop_images\/new-logo.png",
+            "color_scheme": "qatar-2",
+            "company_logo": "shopify:\/\/shop_images\/logo_qatar_white.png",
             "text": "Industrias Qatar",
             "link": "shopify:\/\/collections\/qatar"
           }
@@ -17,7 +17,8 @@
         "b30dbd60-2edf-470f-b2f1-4e2456aa142e": {
           "type": "announcement",
           "settings": {
-            "color_scheme": "company-3",
+            "color_scheme": "accent-1",
+            "company_logo": "shopify:\/\/shop_images\/logo_png.webp",
             "text": "Global Racks",
             "link": ""
           }
@@ -25,7 +26,8 @@
         "f9d4c246-391d-4dfe-b845-364dc01fdc86": {
           "type": "announcement",
           "settings": {
-            "color_scheme": "company-2",
+            "color_scheme": "background-1",
+            "company_logo": "shopify:\/\/shop_images\/Fabbri-Logo-1.png",
             "text": "Fabbri",
             "link": ""
           }
