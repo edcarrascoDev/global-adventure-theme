@@ -42,7 +42,7 @@
               role="region"
             >
               <div
-                class="announcement-bar__announcement"
+                class="announcement-bar__announcement color-{{ block.settings.color_scheme }}"
                 role="region"
                 aria-label="{{ 'sections.header.announcement' | t }}"
                 {{ block.shopify_attributes }}
@@ -221,6 +221,12 @@
       "type": "announcement",
       "name": "t:sections.announcement-bar.blocks.announcement.name",
       "settings": [
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "accent-1"
+        },
         {
           "type": "image_picker",
           "id": "image",
