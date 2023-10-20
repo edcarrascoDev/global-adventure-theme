@@ -8,8 +8,8 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "color_scheme": "qatar-2",
-            "image": "shopify:\/\/shop_images\/new-logo.png",
+            "color_scheme": "background-1",
+            "company_logo": "shopify:\/\/shop_images\/new-logo.png",
             "text": "Industrias Qatar",
             "link": "shopify:\/\/collections\/qatar"
           }
