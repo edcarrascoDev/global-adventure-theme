@@ -31,24 +31,15 @@
       role="region"
       aria-label="{{ 'sections.announcements.announcement_bar' | t }}"
     >
-      <div class="announcement-bar?">
+      <div class="announcement-bar__group">
         <div
-          class="grid grid--1-col slider slider--everywhere"
-          id="Slider-{{ section.id }}"
-          aria-live="polite"
-          aria-atomic="true"
-          data-autoplay="{{ section.settings.auto_rotate }}"
-          data-speed="{{ section.settings.change_slides_speed }}"
+          class="grid grid--1-col"
         >
           {%- for block in section.blocks -%}
             <div
-              class="slideshow__slide slider__slide grid__item grid--1-col"
-              id="Slide-{{ section.id }}-{{ forloop.index }}"
+              class="announcement-bar__item grid__item grid--1-col"
               {{ block.shopify_attributes }}
-              role="group"
-              aria-roledescription="{{ 'sections.announcements.announcement' | t }}"
-              aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-              tabindex="-1"
+              role="region"
             >
               <div
                 class="announcement-bar__announcement"
