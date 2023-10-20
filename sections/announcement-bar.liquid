@@ -54,9 +54,13 @@
                     class="announcement-bar__link link link--text focus-inset animate-arrow"
                     >
                   {%- endif -%}
-                  <p class="announcement-bar__message h5">
-                    <span>{{ block.settings.text | escape }}</span>
-                  </p>
+                  {%- if block.settings.company_logo -%}
+                    {{ block.settings.company_logo | image_url: width: 100 | image_tag }}
+                  {% else %}
+                    <p class="announcement-bar__message h5">
+                      <span>{{ block.settings.text | escape }}</span>
+                    </p>
+                  {%- endif -%}
                   {%- if block.settings.link != blank -%}
                     </a>
                   {%- endif -%}
@@ -226,7 +230,7 @@
         },
         {
           "type": "image_picker",
-          "id": "image",
+          "id": "company_logo",
           "label": "Logo del anuncio"
         },
         {
