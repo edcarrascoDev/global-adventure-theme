@@ -33,11 +33,11 @@
     >
       <div class="announcement-bar__group">
         <div
-          class="grid grid--{{ section.blocks.size }}-col"
+          class="grid grid--{{ section.blocks.size }}-col grid--gapless"
         >
           {%- for block in section.blocks -%}
             <div
-              class="announcement-bar__item grid__item grid--1-col"
+              class="announcement-bar__item grid__item grid--1-col "
               {{ block.shopify_attributes }}
               role="region"
             >
