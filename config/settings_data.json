@@ -175,13 +175,35 @@
           "shadow": "#121212"
         }
       },
-      "accent-2": {
+      "company-1": {
         "settings": {
           "background": "#334FB4",
           "background_gradient": "",
           "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#334FB4",
+          "button": "#20232d",
+          "button_label": "#FFFFFF",
+          "secondary_button_label": "#FFFFFF",
+          "shadow": "#121212"
+        }
+      },
+      "company-2": {
+        "settings": {
+          "background": "#CA3400",
+          "background_gradient": "",
+          "text": "#FFFFFF",
+          "button": "#20232d",
+          "button_label": "#FFFFFF",
+          "secondary_button_label": "#FFFFFF",
+          "shadow": "#121212"
+        }
+      },
+      "company-3": {
+        "settings": {
+          "background": "#FFD401",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#2b3445",
+          "button_label": "#FFFFFF",
           "secondary_button_label": "#FFFFFF",
           "shadow": "#121212"
         }
