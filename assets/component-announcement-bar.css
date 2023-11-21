@@ -1,1 +1,1 @@
-.utility-bar__grid{display:flex}.announcement-bar{flex:1;justify-content:flex-start}.announcement-bar__announcement{padding:1rem 2rem}
+.utility-bar__grid{display:flex}.announcement-bar{flex:1;justify-content:flex-start}.announcement-bar__announcement{padding:.5rem 1.5rem}@media only screen and (min-width:992px){.announcement-bar__announcement{padding:1rem 2rem}}
