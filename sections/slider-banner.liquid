@@ -18,7 +18,7 @@
             aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
             tabindex="-1">
             {%- style -%}
-              #hero-slide-{{ section.id }}-{{ forloop.index }}::after {
+              #hero-slide-{{ section.id }}-{{ forloop.index }} .hero-slider__wrapper::after {
                 opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
               }
             {%- endstyle -%}
