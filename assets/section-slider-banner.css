@@ -1,1 +1,1 @@
-.hero-slider{position:relative;width:100vh}.hero-slider::after{content:"";height:100%;left:0;position:absolute;top:0;width:100%}
+.hero-slider{position:relative;width:100vh}.hero-slider::after{background-color:#000;content:"";height:100%;left:0;position:absolute;top:0;width:100%}
