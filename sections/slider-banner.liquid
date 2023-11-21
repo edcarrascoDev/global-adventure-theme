@@ -4,6 +4,12 @@
 
 {% assign slider_id = 'swiper-hero-' | append: section.id %}
 
+{%- style -%}
+    #hero-banner--{{ section.id }}::after {
+      opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+    }
+  {%- endstyle -%}
+
 <div id="hero-banner-{{ section.id }}" class="hero-slider">
   <div class="hero-slider__container">
     <div class="swiper" id="{{ slider_id }}">
