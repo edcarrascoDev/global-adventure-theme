@@ -64,16 +64,9 @@
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
   
     const swiper = new Swiper('{{ slider_id }}',{
-      spaceBetween: 30,
+      spaceBetween: 0,
       effect: "fade",
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      autoplay: true,
     })
 </script>
 
@@ -164,7 +157,7 @@
     ],
     "presets": [
       {
-        "name": "test",
+        "name": "Slider principal",
         "blocks": [
           {
             "type": "slide"
