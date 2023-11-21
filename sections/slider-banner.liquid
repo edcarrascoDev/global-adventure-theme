@@ -11,7 +11,7 @@
         {% for block in section.blocks %}
           {%- style -%}
             #hero-slide-{{ section.id }}-{{ forloop.index }}::after {
-              opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+              opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
             }
           {%- endstyle -%}
           <div
