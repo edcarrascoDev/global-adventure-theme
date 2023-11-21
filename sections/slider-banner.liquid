@@ -18,11 +18,12 @@
             aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
             tabindex="-1">
             {%- style -%}
-              #hero-slide-{{ section.id }}-{{ forloop.index }} .hero-slider__wrapper::after {
+              #hero-slide-{{ section.id }}-{{ forloop.index }}
+              .hero-slider__wrapper::after {
                 opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
               }
             {%- endstyle -%}
-            <div class="hero-slider__wrapper">
+            <div class="hero-slider__wrapper hero-slider__wrapper--{{ section.settings.slide_height }}">
               {%- liquid
                 assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
                 if section.settings.image_behavior == 'ambient'
@@ -91,8 +92,8 @@
         "id": "slide_height",
         "options": [
           {
-            "value": "adapt_image",
-            "label": "t:sections.slideshow.settings.slide_height.options__1.label"
+            "value": "screen_height",
+            "label": "Altura de la ventana"
           }, {
             "value": "small",
             "label": "t:sections.slideshow.settings.slide_height.options__2.label"
