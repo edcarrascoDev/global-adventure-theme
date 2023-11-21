@@ -1,1 +1,1 @@
-.hero-slider{position:relative;width:100vh}.hero-slider::after{background-color:#000;content:"";height:100%;left:0;position:absolute;top:0;width:100%}@media only screen and (min-width:768px){.hero-slider{max-height:calc(100vh - 7rem)}}
+.hero-slider{position:relative;width:100vh}.hero-slider::after{background-color:#000;content:"";height:100%;left:0;position:absolute;top:0;width:100%;z-index:1}@media only screen and (min-width:768px){.hero-slider{max-height:calc(100vh - 7rem)}}
