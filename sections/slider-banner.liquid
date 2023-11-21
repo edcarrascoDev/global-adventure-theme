@@ -30,8 +30,8 @@
               -%}
               {% if block.settings.mobile_image %}
                 <picture>
-                  <source media="(min-width: 992px)" srcset="{{ block.settings.mobile_image | image_url: width: 990 }}">
-                  {{ block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths }}
+                  <source media="(min-width: 992px)" srcset="{{ block.settings.image | image_url: width: 3840 }}">
+                  {{ block.settings.mobile_image | image_url: width: 990 | image_tag: loading: 'lazy' }}
                 </picture>
               {% else %}
                 {{ block.settings.image | image_url: width: 3840 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths }}
