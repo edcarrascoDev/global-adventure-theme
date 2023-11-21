@@ -7,20 +7,20 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/DSC0009.jpg",
-            "button_label": "Button label",
-            "link": "",
+            "button_label": "Ver productos",
+            "link": "shopify:\/\/collections\/qatar",
             "button_style_secondary": false,
-            "image_overlay_opacity": 50
+            "image_overlay_opacity": 40
           }
         },
         "template--21224303558932__8b0cdd20-cf50-4e35-9655-0256d81df2c3-slide-2": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/fabbri-2022-1.jpg",
-            "button_label": "Button label",
-            "link": "",
+            "button_label": "Ver productos",
+            "link": "shopify:\/\/collections\/fabbri",
             "button_style_secondary": false,
-            "image_overlay_opacity": 0
+            "image_overlay_opacity": 40
           }
         }
       },
