@@ -4,17 +4,16 @@
 
 {% assign slider_id = 'swiper-hero-' | append: section.id %}
 
-{%- style -%}
-  #hero-slide-{{ section.id }}-{{ forloop.index }}::after {
-    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
-  }
-{%- endstyle -%}
-
 <div id="hero-banner-{{ section.id }}" class="hero-slider">
   <div class="hero-slider__container">
     <div class="swiper" id="{{ slider_id }}">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
+          {%- style -%}
+            #hero-slide-{{ section.id }}-{{ forloop.index }}::after {
+              opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+            }
+          {%- endstyle -%}
           <div
             class="swiper-slide hero-slider__slide"
             id="hero-slide-{{ section.id }}-{{ forloop.index }}"
