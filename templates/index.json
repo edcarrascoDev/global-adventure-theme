@@ -19,7 +19,7 @@
             "image": "shopify:\/\/shop_images\/fabbri-2022-1.jpg",
             "button_label": "Ver productos",
             "link": "shopify:\/\/collections\/fabbri",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "image_overlay_opacity": 40
           }
         }
