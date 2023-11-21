@@ -9,11 +9,6 @@
     <div class="swiper" id="{{ slider_id }}">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
-          {%- style -%}
-            #hero-slide-{{ section.id }}-{{ forloop.index }}::after {
-              opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
-            }
-          {%- endstyle -%}
           <div
             class="swiper-slide hero-slider__slide"
             id="hero-slide-{{ section.id }}-{{ forloop.index }}"
@@ -22,6 +17,11 @@
             aria-roledescription="{{ 'sections.slideshow.slide' | t }}"
             aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
             tabindex="-1">
+            {%- style -%}
+              #hero-slide-{{ section.id }}-{{ forloop.index }}::after {
+                opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
+              }
+            {%- endstyle -%}
             <div class="hero-slider__wrapper">
               {%- liquid
                 assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
