@@ -41,7 +41,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/prueba.jpg",
             "logo_image": "shopify:\/\/shop_images\/new-logo.png",
-            "collection": ""
+            "collection": "qatar"
           }
         },
         "template--21224303558932__14a60019-e425-459f-888f-3b5ef1d61624-featured_collection-2": {
@@ -49,7 +49,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/prueba.jpg",
             "logo_image": "shopify:\/\/shop_images\/Fabbri-Logo-1.png",
-            "collection": ""
+            "collection": "fabbri"
           }
         },
         "template--21224303558932__14a60019-e425-459f-888f-3b5ef1d61624-featured_collection-3": {
@@ -57,7 +57,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/prueba.jpg",
             "logo_image": "shopify:\/\/shop_images\/new-logo.png",
-            "collection": ""
+            "collection": "global-racks"
           }
         }
       },
