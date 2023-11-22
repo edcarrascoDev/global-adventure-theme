@@ -50,9 +50,10 @@
             {% endif %}>
             <div class="collection-list-media__box">
               {% assign image_class = 'collection-list-media__image' %}
+              {% assign logo_class = 'collection-list-media__logo' %}
               {{ block.settings.image | image_url: width: 500 | image_tag: loading: 'lazy', width: section.settings.image.width, class: image_class }}
               <div class="collection-list-media__content">
-                <h3>{{ block.settings.collection.title }}</h3>
+                {{ block.settings.logo_image | image_url: width: 400 | image_tag: loading: 'lazy', width: section.settings.image.width, class: logo_class }}
                 <a class="collection-list-media__action" href="{{ block.settings.collection.url }}">Ver productos
                   <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
                 </a>
