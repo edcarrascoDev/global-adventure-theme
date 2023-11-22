@@ -1,5 +1,4 @@
-{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
-{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-collection-list-media.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-{{ section.id }}-padding {
@@ -43,21 +42,23 @@
         {%- for block in section.blocks -%}
           <div
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="collection-list__item grid__item{% if block.settings.collection.featured_image == nil %} collection-list__item--no-media{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="collection-list-media__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
             data-cascade
             style="--animation-order: {{ forloop.index }};"
             {% endif %}>
-            <div class="collection-list__content">
-              {{  }}
+            <div class="collection-list-media__box">
+              {% assign image_class = 'collection-list-media__image' %}
+              {{ block.settings.image | image_url: width: 500 | image_tag: loading: 'lazy', width: section.settings.image.width, class: image_class }}
+              <div class="collection-list-media__content">
+                <h3>{{ block.settings.collection.title }}</h3>
+                <a class="collection-list-media__action" href="{{ block.settings.collection.url }}">Ver productos
+                  <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                </a>
+
+              </div>
             </div>
-            {% render 'card-collection'
-              , card_collection: block.settings.collection
-              , media_aspect_ratio: section.settings.image_ratio
-              , columns: columns
-              , placeholder_image: placeholder_image
-            %}
           </div>
         {%- endfor -%}
       </div>
@@ -177,7 +178,6 @@
         "type": "featured_collection",
         "name": "t:sections.collection-list.blocks.featured_collection.name",
         "settings": [
-
           {
             "type": "image_picker",
             "id": "image",
