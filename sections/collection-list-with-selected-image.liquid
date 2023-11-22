@@ -49,8 +49,9 @@
             data-cascade
             style="--animation-order: {{ forloop.index }};"
             {% endif %}>
-            {%- assign placeholder_image_index = forloop.index0 | modulo: 4 | plus: 1 -%}
-            {%- assign placeholder_image = 'collection-apparel-' | append: placeholder_image_index -%}
+            <div class="collection-list__content">
+              {{   }}
+            </div>
             {% render 'card-collection'
               , card_collection: block.settings.collection
               , media_aspect_ratio: section.settings.image_ratio
@@ -176,6 +177,12 @@
         "type": "featured_collection",
         "name": "t:sections.collection-list.blocks.featured_collection.name",
         "settings": [
+          
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.image-banner.settings.image.label"
+    },
           {
             "type": "collection",
             "id": "collection",
