@@ -21,7 +21,7 @@
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-list-wrapper page-width isolate{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+      <div class=" title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
         <h2 id="SectionHeading-{{ section.id }}" class="collection-list-title inline-richtext center {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
