@@ -50,7 +50,7 @@
             style="--animation-order: {{ forloop.index }};"
             {% endif %}>
             <div class="collection-list__content">
-              {{   }}
+              {{  }}
             </div>
             {% render 'card-collection'
               , card_collection: block.settings.collection
@@ -58,9 +58,9 @@
               , columns: columns
               , placeholder_image: placeholder_image
             %}
-          </li>
+          </div>
         {%- endfor -%}
-      </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -177,13 +177,12 @@
         "type": "featured_collection",
         "name": "t:sections.collection-list.blocks.featured_collection.name",
         "settings": [
-      
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "t:sections.image-banner.settings.image.label"
-    },
+
           {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.image-banner.settings.image.label"
+          }, {
             "type": "collection",
             "id": "collection",
             "label": "t:sections.collection-list.blocks.featured_collection.settings.collection.label"
