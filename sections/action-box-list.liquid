@@ -10,7 +10,11 @@
           </h2>
         </div>
       {%- endunless -%}
-      <div class="action-box-list__grid grid grid--2-col-tablet grid--1-col"></div>
+      <div class="action-box-list__grid grid grid--2-col-tablet grid--1-col">
+        {%- for block in section.blocks -%}
+        {%- endfor -%}
+
+      </div>
     </div>
   </div>
 </div>
