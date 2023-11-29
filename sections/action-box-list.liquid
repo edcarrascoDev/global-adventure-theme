@@ -1,0 +1,15 @@
+{{ 'section-action-box-list.css' | asset_url | stylesheet_tag }}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+    <div class="action-box-list">
+        <div class="page-width isolate{% if section.settings.title == blank %} no-heading{% endif %}">
+            {%- unless section.settings.title == blank -%}
+                <div class="title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+                  <h2 id="SectionHeading-{{ section.id }}" class="action-box-list__title inline-richtext center {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+                    {{ section.settings.title }}
+                  </h2>
+                </div>
+              {%- endunless -%}
+        </div>
+    </div>
+</div>
