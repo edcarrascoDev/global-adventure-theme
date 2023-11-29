@@ -38,16 +38,16 @@
             style="--animation-order: {{ forloop.index }};"
             {% endif %}>
             <div class="action-box-item__content">
-              <h6 class="action-box-item__subtitle">{{ bloxk.settings.subtitle }}</h6>
-              <h4 class="action-box-item__title">{{ bloxk.settings.title }}</h4>
+              <h6 class="action-box-item__subtitle">{{ block.settings.subtitle }}</h6>
+              <h4 class="action-box-item__title">{{ block.settings.title }}</h4>
               <a
                 class="button button--primary"
-                {% if bloxk.settings.button_link == blank %}
+                {% if block.settings.button_link == blank %}
                 role="link"
                 aria-disabled="true"
                 {% else %}
-                href="{{ bloxk.settings.button_link }}"
-                {% endif %}>{{ bloxk.settings.button_label | escape }}</a>
+                href="{{ block.settings.button_link }}"
+                {% endif %}>{{ block.settings.button_label | escape }}</a>
             </div>
           </div>
         {%- endfor -%}
