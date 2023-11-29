@@ -23,13 +23,12 @@
               <h6 class="action-box-item__subtitle">{{ bloxk.settings.subtitle }}</h6>
               <h4 class="action-box-item__title">{{ bloxk.settings.title }}</h4>
               <a
-                href=""
                 class="button button--primary"
-                {% if section.settings.button_link == blank %}
+                {% if bloxk.settings.button_link == blank %}
                 role="link"
                 aria-disabled="true"
                 {% else %}
-                href="{{ section.settings.button_link }}"
+                href="{{ bloxk.settings.button_link }}"
                 {% endif %}>{{ bloxk.settings.link_text }}</a>
             </div>
           </div>
