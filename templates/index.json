@@ -113,8 +113,8 @@
           "settings": {
             "title": "De techo",
             "subtitle": "Portabicicletas",
-            "link_label": "Ver Productos",
-            "link": "shopify:\/\/collections\/frontpage"
+            "button_label": "Button label",
+            "button_link": "shopify:\/\/collections\/frontpage"
           }
         },
         "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-2": {
@@ -122,8 +122,8 @@
           "settings": {
             "title": "",
             "subtitle": "",
-            "link_label": "",
-            "link": ""
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
         "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-3": {
@@ -131,8 +131,8 @@
           "settings": {
             "title": "",
             "subtitle": "",
-            "link_label": "",
-            "link": ""
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
