@@ -12,8 +12,14 @@
       {%- endunless -%}
       <div class="action-box-list__grid grid grid--2-col-tablet grid--1-col">
         {%- for block in section.blocks -%}
+          <div
+            class="action-box-item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {{ block.shopify_attributes }}
+            {% if settings.animations_reveal_on_scroll %}
+            data-cascade
+            style="--animation-order: {{ forloop.index }};"
+            {% endif %}></div>
         {%- endfor -%}
-
       </div>
     </div>
   </div>
