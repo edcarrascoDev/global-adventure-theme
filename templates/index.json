@@ -141,10 +141,11 @@
         "a403b607-4df4-449d-aec6-32c48825a3ea": {
           "type": "box",
           "settings": {
-            "title": "",
-            "subtitle": "",
-            "button_label": "Button label",
-            "button_link": ""
+            "image": "shopify:\/\/shop_images\/Sin-titulo-4.jpg",
+            "title": "PORTAEQUIPAJES",
+            "subtitle": "NUESTROS",
+            "button_label": "VER PRODUCTOS",
+            "button_link": "shopify:\/\/collections\/qatar"
           }
         }
       },
