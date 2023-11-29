@@ -121,9 +121,10 @@
         "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-2": {
           "type": "box",
           "settings": {
-            "title": "",
-            "subtitle": "",
-            "button_label": "Button label",
+            "image": "shopify:\/\/shop_images\/Sin-titulo-2.jpg",
+            "title": "BARRAS DE TECHO",
+            "subtitle": "NUESTRAS",
+            "button_label": "Ver collección",
             "button_link": ""
           }
         },
