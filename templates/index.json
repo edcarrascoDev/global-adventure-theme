@@ -134,12 +134,22 @@
             "button_label": "Button label",
             "button_link": ""
           }
+        },
+        "a403b607-4df4-449d-aec6-32c48825a3ea": {
+          "type": "box",
+          "settings": {
+            "title": "",
+            "subtitle": "",
+            "button_label": "Button label",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-1",
         "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-2",
-        "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-3"
+        "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-3",
+        "a403b607-4df4-449d-aec6-32c48825a3ea"
       ],
       "settings": {
         "title": "",
