@@ -111,6 +111,7 @@
         "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-1": {
           "type": "box",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Sin-titulo-1.jpg",
             "title": "PORTABICICLETAS",
             "subtitle": "NUESTROS",
             "button_label": "Ver COLLECIÓN",
