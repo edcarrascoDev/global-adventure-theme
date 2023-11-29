@@ -15,6 +15,9 @@
           <div
             class="action-box-item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
+            {% if block.settings.image != blank %}
+            {{ block.settings.image | image_url: width: 600 }}
+            {% endif %}
             {% if settings.animations_reveal_on_scroll %}
             data-cascade
             style="--animation-order: {{ forloop.index }};"
@@ -29,7 +32,7 @@
                 aria-disabled="true"
                 {% else %}
                 href="{{ bloxk.settings.button_link }}"
-                {% endif %}>{{ bloxk.settings.link_text }}</a>
+                {% endif %}>{{ bloxk.settings.button_label | escape }}</a>
             </div>
           </div>
         {%- endfor -%}
