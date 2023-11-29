@@ -111,9 +111,9 @@
         "template--21224303558932__6d735e69-6f05-4a96-87ee-f4ffd2f0feba-box-1": {
           "type": "box",
           "settings": {
-            "title": "De techo",
-            "subtitle": "Portabicicletas",
-            "button_label": "Ver productos",
+            "title": "PORTABICICLETAS",
+            "subtitle": "COLLECCIÓN DE",
+            "button_label": "Ver COLLECIÓN",
             "button_link": "shopify:\/\/collections\/frontpage"
           }
         },
