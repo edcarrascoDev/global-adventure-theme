@@ -275,9 +275,9 @@ body {
     font-size: 1.6rem;
   }
 }
-    {% endstyle %}
+  {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag }}
+    {% comment %} {{ 'base.css' | asset_url | stylesheet_tag }} {% endcomment %}
     {{ 'main.css' | asset_url | stylesheet_tag }}
     {{ "application.css" | asset_url | stylesheet_tag }}
 
@@ -391,5 +391,4 @@ body {
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
   </body>
-
 </html>
