@@ -275,9 +275,9 @@ body {
     font-size: 1.6rem;
   }
 }
-  {% endstyle %}
+    {% endstyle %}
 
-    {% comment %} {{ 'base.css' | asset_url | stylesheet_tag }} {% endcomment %}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'main.css' | asset_url | stylesheet_tag }}
     {{ "application.css" | asset_url | stylesheet_tag }}
 
