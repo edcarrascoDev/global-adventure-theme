@@ -30,13 +30,15 @@
           <div
             class="action-box-item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
-            {% if block.settings.image != blank %}
-            style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
-            {% endif %}
             {% if settings.animations_reveal_on_scroll %}
             data-cascade
             style="--animation-order: {{ forloop.index }};"
             {% endif %}>
+            <div
+              class="action-box-item__background"
+              {% if block.settings.image != blank %}
+              style="background-image: url({{ block.settings.image | image_url: width: 600 }});"
+              {% endif %}></div>
             <div class="action-box-item__content">
               <h4 class="action-box-item__subtitle">{{ block.settings.subtitle }}</h4>
               <h3 class="action-box-item__title">{{ block.settings.title }}</h3>
