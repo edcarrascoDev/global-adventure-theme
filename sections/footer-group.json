@@ -4,6 +4,33 @@
   "sections": {
     "footer": {
       "type": "footer",
+      "blocks": {
+        "brand_information_PacfCn": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "link_list_rxtyUf": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Nosotros",
+            "menu": "footer"
+          }
+        },
+        "link_list_fHdeyi": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Ayuda",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_PacfCn",
+        "link_list_rxtyUf",
+        "link_list_fHdeyi"
+      ],
       "settings": {
         "color_scheme": "inverse",
         "newsletter_enable": false,
