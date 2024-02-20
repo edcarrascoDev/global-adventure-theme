@@ -2554,8 +2554,8 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   fill: none;
   vertical-align: middle;
 }
@@ -2564,7 +2564,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
 .header__icon--cart .icon {
   height: 4.4rem;
   width: 4.4rem;
-  padding: 0;
 }
 
 .header__icon--cart {
