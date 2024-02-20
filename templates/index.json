@@ -166,8 +166,8 @@
     "featured_collection_ygAFbK": {
       "type": "featured-collection",
       "settings": {
-        "title": "",
-        "heading_size": "h1",
+        "title": "Lo más vendido",
+        "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
