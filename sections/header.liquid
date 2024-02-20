@@ -324,7 +324,7 @@
         {%- endcase -%}
       {%- endfor -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset ml-5" id="cart-icon-bubble">
+      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset ml-1" id="cart-icon-bubble">
         {%- liquid
           if cart == empty
             render 'icon-cart-empty'
