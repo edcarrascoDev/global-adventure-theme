@@ -542,20 +542,6 @@ a:not([href]) {
   display: none;
 }
 
-hr {
-  border: none;
-  height: 0.1rem;
-  background-color: rgba(var(--color-foreground), 0.2);
-  display: block;
-  margin: 5rem 0;
-}
-
-@media screen and (min-width: 750px) {
-  hr {
-    margin: 7rem 0;
-  }
-}
-
 .full-unstyled-link {
   text-decoration: none;
   color: currentColor;
@@ -2412,7 +2398,6 @@ product-info .loading-overlay:not(.hidden) ~ *,
 
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
   }
 
@@ -2568,17 +2553,10 @@ product-info .loading-overlay:not(.hidden) ~ *,
 }
 
 .header__icon .icon {
-  height: 2rem;
-  width: 2rem;
+  height: 2.5rem;
+  width: 2.5rem;
   fill: none;
   vertical-align: middle;
-}
-
-.header__icon,
-.header__icon--cart .icon {
-  height: 4.4rem;
-  width: 4.4rem;
-  padding: 0;
 }
 
 .header__icon--cart {
