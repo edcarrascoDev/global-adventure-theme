@@ -1,0 +1,37 @@
+.heading {
+  font-family: $title-font-stack;
+
+  &--h1 {
+    font-size: 4rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &--h2 {
+    font-size: 3.5rem;
+    @include media-breakpoint-down(sm) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &--h3 {
+    font-size: 3rem;
+  }
+
+  &--h4 {
+    font-size: 2.4rem;
+  }
+
+  &--h5 {
+    font-size: 2rem;
+  }
+
+  &--h6 {
+    font-size: 1.6rem;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

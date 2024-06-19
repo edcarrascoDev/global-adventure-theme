@@ -1,0 +1,123 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * remove native margin on all elements
+ */
+* {
+  margin: 0;
+}
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+}
+
+/**
+ * Set up body background
+ */
+
+body {
+  background-color: $white-color;
+  width: 100%;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $text-color;
+  text-decoration: none;
+  opacity: 1;
+
+  @include on-event {
+    opacity: 0.8;
+    text-decoration: underline;
+  }
+}
+
+/**
+ * Basic styles for lists
+ */
+ul:not(.native-list) {
+  list-style: none;
+  padding-left: 0;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/**
+ * Container
+ */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 100%;
+
+  &--relative {
+    position: relative;
+  }
+
+  @include media-breakpoint-up(sm) {
+    max-width: 740px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 1020px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+
+    &:not(&--compact) {
+      max-width: $page-width;
+    }
+
+    &--extended {
+      max-width: 1600px;
+    }
+  }
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 7rem;
+}
+
+.paragraph {
+  margin-bottom: 1.2rem;
+  line-height: 3rem;
+}
+
+.auto-height {
+  height: auto !important;
+}
+
+/* base-details-summary */
+summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}

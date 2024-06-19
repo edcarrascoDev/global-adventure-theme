@@ -1,0 +1,130 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass Variables.
+// -----------------------------------------------------------------------------
+
+
+// =============================================================================
+// Color Variables.
+// =============================================================================
+
+// Main brand color
+/// @type Color
+$primary-color: #D9042B !default;
+
+// Secondary color
+/// @type Color
+$secondary-color: #04384A  !default;
+
+// Light color
+/// @type Color
+$background-color: #fff !default;
+
+// Copy text color
+/// @type Color
+$text-color: #000 !default;
+
+// Copy title color
+/// @type Color
+$title-color: #222 !default;
+
+// White color
+/// @type Color
+$white-color: #ffffff !default;
+
+// Dark color
+/// @type Color
+$dark-color: #000000 !default;
+
+// Dark color
+/// @type Color
+$light-grey: #ececec !default;
+
+// sale color
+/// @type Color
+$sale-color: #d90734 !default;
+
+// warn color
+/// @type Color
+$warn-color: #d52424 !default;
+
+// warn color
+/// @type Color
+$warn-color-light: #ebc8c4 !default;
+
+// success color
+/// @type Color
+$success-color: #d1f4da !default;
+
+
+// grey color
+/// @type Color
+$grey-50: #FEFEFE !default;
+$grey-100: #F1F1F1 !default;
+$grey-200: #E5E5E5 !default;
+$grey-300: #D8D8D8 !default;
+$grey-400: #CBCBCB !default;
+$grey-500: #B1b1b1 !default;
+$grey-600: #9B9B9B !default;
+$grey-700: #858585 !default;
+$grey-800: #6F6F6F !default;
+$grey-900: #595959 !default;
+
+// grey color
+/// @type Color
+$blue-grey-50: #eceff1 !default;
+$blue-grey-100: #cfd8dc !default;
+$blue-grey-200: #b0bec5 !default;
+$blue-grey-300: #90a4ae !default;
+$blue-grey-400: #78909c !default;
+$blue-grey-500: #607d8b !default;
+$blue-grey-600: #546e7a !default;
+$blue-grey-700: #455a64 !default;
+$blue-grey-800: #37474f !default;
+$blue-grey-900: #263238 !default;
+
+
+// =============================================================================
+// Fonts Variables.
+// =============================================================================
+
+
+/// Regular font family
+/// @type List
+$text-font-stack:  var(--font-body-family);
+
+/// Title font family
+/// @type List
+$title-font-stack:  var(--font-heading-family);
+
+
+
+// =============================================================================
+// Sizes Variables.
+// =============================================================================
+
+/// Page Sizes
+/// @type variables
+$page-width: var(--page-width);
+$page-width-padding: var(--page-width-padding);
+
+/// Header Sizes
+/// @type values
+$header-height: 7rem;
+$header-height-up-md: 8rem;
+$page-width-padding: var(--page-width-padding);
+
+/// Button Sizes
+/// @type values
+$button-icon-padding: .8rem;
+$button-icon-size: 4rem;
+$button-width: 18rem;
+$button-height: 4.6rem;
+$button-height-small: 2.6rem;
+
+/// product card Sizes
+/// @type values
+$product-card-size: 36rem;
+
+/// checkbox Sizes
+/// @type values
+$checkbox-size: 1.5rem;

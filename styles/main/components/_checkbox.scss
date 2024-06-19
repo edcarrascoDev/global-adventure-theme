@@ -1,0 +1,32 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &__input {
+    display: none;
+    &:not(:disabled) {
+      & ~ .checkbox__box {
+        border-color: $grey-500;
+      }
+    }
+
+    &:disabled {
+      background: $grey-300;
+    }
+
+    &:checked {
+      & ~ .checkbox__box {
+        background: $grey-500;
+      }
+    }
+  }
+
+  &__box {
+    display: block;
+    width: $checkbox-size;
+    height: $checkbox-size;
+    border: .1rem solid $grey-300;
+  }
+
+}

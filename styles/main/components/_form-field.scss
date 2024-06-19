@@ -1,0 +1,115 @@
+.field {
+  position: relative;
+  margin-bottom: 2rem;
+
+  &--full {
+    .field {
+      &__input {
+        width: 100%;
+      }
+    }
+  }
+
+  .field {
+    &__label {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: .4rem;
+    }
+
+    &__wrapper {
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    &__prefix {
+      left: .8rem;
+      top: 50%;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    &__input {
+      background: $white-color;
+      border: .2rem solid #dbdbdb;
+      border-radius: 0.4rem;
+      font-family: $text-font-stack;
+      height: 100%;
+      min-height: 5rem;
+      padding: 0 1.3rem;
+    }
+
+    &__helper {
+      display: block;
+      font-size: 1.1rem;
+      margin-top: .4rem;
+
+      .icon {
+        width: 1rem;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  &.field {
+    &--with-prefix {
+      .field {
+        &__input {
+          padding-left: 2rem;
+        }
+      }
+    }
+
+    &--with-error {
+      .field {
+        &__input {
+          border-color: $warn-color;
+        }
+      }
+    }
+  }
+}
+
+.form-message {
+  border: 1px solid $secondary-color;
+  border-radius: 1rem;
+  padding: 1.5rem 2rem;
+
+  &__status {
+    color: $dark-color;
+    display: flex;
+    align-items: center;
+
+    .icon {
+      outline: none;
+      width: 3rem;
+      margin-right: 2rem;
+    }
+  }
+
+  &__status-list {
+    > li {
+      padding: 1rem 0;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--success {
+    border-color: $success-color;
+    background: $success-color;
+  }
+
+  &--warn {
+    border-color: $warn-color-light;
+    background: $warn-color-light;
+
+    .form-message {
+      &__status, &__status-list, &__link {
+        color: $warn-color;
+      }
+    }
+  }
+}

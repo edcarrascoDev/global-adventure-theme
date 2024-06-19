@@ -1,0 +1,145 @@
+.button {
+  @at-root .shopify-payment-button__button, &  {
+    background: transparent;
+    border: none;
+    border-radius: 0 !important;
+    transition: all ease-in-out 250ms;
+    text-align: center;
+    text-decoration: none !important;
+    padding: 0 1rem;
+  }
+
+  &:not(&--disabled), &:not([disabled]) {
+    cursor: pointer;
+  }
+
+
+  @at-root .shopify-payment-button__button, &:not(&--icon), {
+    align-items: center;
+    border: 1px solid $white-color;
+    display: inline-flex;
+    font-size: 1.4rem;
+    gap: .5rem;
+    height: $button-height;
+    justify-content: center;
+    letter-spacing: .2rem;
+    line-height: 1;
+    min-width: $button-width;
+    text-transform: uppercase;
+    box-sizing: border-box;
+
+    .icon {
+      width: 2rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &.button {
+    &--primary {
+      &:not(.button--outline) {
+        background: $white-color;
+        color: $dark-color;
+      }
+
+      &.button--square {
+        border-color: $dark-color;
+        font-size: 2rem;
+        min-width: initial;
+        width: $button-height;
+      }
+    }
+
+    &--secondary {
+      background: transparent;
+      color: $white-color;
+    }
+
+    &--outline {
+      &.button {
+        &--primary {
+          border-color: $dark-color;
+        }
+      }
+    }
+
+    @at-root .shopify-payment-button__button, &--dark {
+      border-color: $dark-color;
+      background: $dark-color !important;
+      color: $white-color;
+
+      &.button--outline {
+        border-color: $white-color;
+      }
+    }
+
+    &--small {
+      min-width: auto;
+      font-size: 1.3rem;
+      text-transform: none;
+      height: $button-height-small;
+    }
+
+    &--icon {
+      border: none;
+      border-radius: 50%;
+      box-sizing: border-box;
+      display: inline-block;
+      height: $button-icon-size;
+      outline: none;
+      padding: $button-icon-padding;
+      width: $button-icon-size;
+
+      > * {
+        max-width: 100%;
+        max-height: 100%;
+      }
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.08);
+      }
+    }
+
+    &--full {
+      width: 100%;
+    }
+  }
+}
+
+.hamburger-button {
+  position: relative;
+
+  span, &:after, &:before {
+    background: $dark-color;
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transform-origin: left;
+    width: calc(100% - #{$button-icon-padding} * 2);
+  }
+
+  &:before {
+    top: 1.2rem;
+  }
+
+  &:after {
+    bottom: 1.2rem;
+    transform: scaleX(.4);
+  }
+
+  span {
+    top: calc(50% - 1px);
+    transform: scaleX(.6);
+  }
+}
+
+.link {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $text-font-stack;
+}

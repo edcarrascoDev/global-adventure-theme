@@ -1,0 +1,165 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+/**
+ * Hide text while making it readable for screen readers
+ * 1. Needed in WebKit-based browsers because of an implementation bug;
+ *    See: https://code.google.com/p/chromium/issues/detail?id=457146
+ */
+.hide-text {
+  overflow: hidden;
+  padding: 0 !important; /* 1 */
+  text-indent: 101%;
+  white-space: nowrap;
+
+}
+
+/**
+ * Hide element while making it readable for screen readers
+ * Shamelessly borrowed from HTML5Boilerplate:
+ * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
+ */
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+@include media-breakpoint-down(sm) {
+  .overflow-hidden-mobile {
+    overflow: hidden;
+  }
+}
+
+.media {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.on-dark-section {
+  color: $white-color !important;
+}
+
+/**
+ * Align the text
+ */
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-light {
+  color: $white-color;
+}
+
+.title-wrapper-with-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  &__link {
+    text-transform: uppercase;
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      gap: 1rem;
+      text-decoration: none !important;
+
+      span {
+        width: 3rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+/**
+ * margin and padding helpers
+ */
+$i: 0;
+@while $i <= 10 {
+  .p-#{$i} {
+    padding: #{$i}rem !important;
+  }
+
+  .py-#{$i} {
+    padding-top: #{$i}rem !important;
+    padding-bottom: #{$i}rem !important;
+  }
+
+  .px-#{$i} {
+    padding-right: #{$i}rem !important;
+    padding-left: #{$i}rem !important;
+  }
+
+  .pt-#{$i} {
+    padding-top: #{$i}rem !important;
+  }
+
+  .pr-#{$i} {
+    padding-right: #{$i}rem !important;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: #{$i}rem !important;
+  }
+
+  .pl-#{$i} {
+    padding-left: #{$i}rem !important;
+  }
+
+  .m-#{$i} {
+    margin: #{$i}rem !important;
+  }
+
+  .my-#{$i} {
+    margin-top: #{$i}rem !important;
+    margin-bottom: #{$i}rem !important;
+  }
+
+  .mx-#{$i} {
+    margin-right: #{$i}rem !important;
+    margin-left: #{$i}rem !important;
+  }
+
+  .mt-#{$i} {
+    margin-top: #{$i}rem !important;
+  }
+
+  .mr-#{$i} {
+    margin-right: #{$i}rem !important;
+  }
+
+  .mb-#{$i} {
+    margin-bottom: #{$i}rem !important;
+  }
+
+  .ml-#{$i} {
+    margin-left: #{$i}rem !important;
+  }
+
+  $i: $i + 1;
+}

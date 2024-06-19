@@ -1,0 +1,18 @@
+#cart-icon-bubble {
+  position: relative;
+}
+.cart-count-bubble {
+  position: absolute;
+  background-color: $primary-color;
+  color: $white-color;
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: .9rem;
+  top: 0;
+  left: 2.2rem;
+  line-height: 1.1;
+}
