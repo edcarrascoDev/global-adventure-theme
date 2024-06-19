@@ -1,1 +1,26 @@
-@import "abstracts";
+@import "./abstracts";
+
+.utility-bar {
+  &__grid {
+    display: flex;
+
+    @include media-breakpoint-down('sm') {
+      &.page-width {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.announcement-bar {
+  flex: 1;
+  justify-content: flex-start;
+
+  &__announcement {
+    padding: .5rem 1.5rem;
+
+    @include media-breakpoint-up('sm') {
+      padding: 1rem 2rem;
+    }
+  }
+}

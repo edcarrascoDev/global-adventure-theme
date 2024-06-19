@@ -1,5 +1,5 @@
 .button {
-  @at-root .shopify-payment-button__button, &  {
+  @at-root .shopify-payment-button__button, & {
     background: transparent;
     border: none;
     border-radius: 0 !important;
@@ -7,16 +7,21 @@
     text-align: center;
     text-decoration: none !important;
     padding: 0 1rem;
+
+    &::after,
+    &::before {
+      display: none;
+    }
   }
 
-  &:not(&--disabled), &:not([disabled]) {
+  &:not(&--disabled),
+  &:not([disabled]) {
     cursor: pointer;
   }
 
 
-  @at-root .shopify-payment-button__button, &:not(&--icon), {
+  @at-root .shopify-payment-button__button, &:not(&--icon) {
     align-items: center;
-    border: 1px solid $white-color;
     display: inline-flex;
     font-size: 1.4rem;
     gap: .5rem;
@@ -33,36 +38,18 @@
     }
 
     &:hover {
-      opacity: 0.8;
+      opacity: 0.9;
     }
   }
 
   &.button {
     &--primary {
-      &:not(.button--outline) {
-        background: $white-color;
-        color: $dark-color;
-      }
-
-      &.button--square {
-        border-color: $dark-color;
-        font-size: 2rem;
-        min-width: initial;
-        width: $button-height;
-      }
+      background: $secondary-color;
     }
 
     &--secondary {
-      background: transparent;
-      color: $white-color;
-    }
-
-    &--outline {
-      &.button {
-        &--primary {
-          border-color: $dark-color;
-        }
-      }
+      background: $white-color;
+      color: $secondary-color;
     }
 
     @at-root .shopify-payment-button__button, &--dark {
@@ -75,13 +62,6 @@
       }
     }
 
-    &--small {
-      min-width: auto;
-      font-size: 1.3rem;
-      text-transform: none;
-      height: $button-height-small;
-    }
-
     &--icon {
       border: none;
       border-radius: 50%;
@@ -92,7 +72,7 @@
       padding: $button-icon-padding;
       width: $button-icon-size;
 
-      > * {
+      >* {
         max-width: 100%;
         max-height: 100%;
       }
@@ -111,7 +91,9 @@
 .hamburger-button {
   position: relative;
 
-  span, &:after, &:before {
+  span,
+  &:after,
+  &:before {
     background: $dark-color;
     content: '';
     display: block;

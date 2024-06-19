@@ -1,0 +1,39 @@
+@import "./abstracts";
+
+.action-box-item {
+    position: relative;
+
+    &__content {
+        padding: 2rem;
+    }
+
+    &__subtitle,
+    &__title {
+        color: $white-color;
+    }
+
+    &__subtitle {
+        margin: 0;
+    }
+
+    &__title {
+        margin-bottom: 6rem;
+        margin-top: 0;
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-position: center right;
+        background-size: cover;
+        z-index: -1;
+
+        &:empty {
+
+            display: block;
+        }
+    }
+}

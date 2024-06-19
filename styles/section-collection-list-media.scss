@@ -1,0 +1,35 @@
+@import "./abstracts";
+
+.collection-list-media {
+    &__box {
+        position: relative;
+    }
+
+    &__content {
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        left: 0;
+        position: absolute;
+        padding: 2rem;
+        width: 100%;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__logo {
+        height: 3rem;
+        width: fit-content;
+    }
+
+    &__action {
+        color: $blue-grey-900;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
