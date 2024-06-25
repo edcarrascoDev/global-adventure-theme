@@ -31,7 +31,7 @@
     <div class="collection-list-media{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div
         class="collection-list-media__grid {% if settings.card_style == 'standard' %} contains-card--standard{% endif %} tw-grid md:tw-grid-cols-{{ section.settings.columns_desktop }} tw-grid-cols-{{ section.settings.columns_mobile }} tw-gap-2 collection-list--{{ section.blocks.size }}-items"
-        data-class="md:tw-grid-cols-3 md:grid-cols-2 md:tw-grid-cols-2 md:tw-grid-cols-1 tw-grid-cols-1 tw-grid-cols-2 tw-grid-cols-3"
+        data-class="md:tw-grid-cols-3 md:grid-cols-2 md:tw-grid-cols-2 md:tw-grid-cols-1 tw-grid-cols-1 tw-grid-cols-2 tw-grid-cols-"
         id="Slider-{{ section.id }}"
         role="list">
         {%- liquid
@@ -43,13 +43,13 @@
         {%- for block in section.blocks -%}
           <div
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="collection-list-media__item tw-h-48 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="collection-list-media__item {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
             data-cascade
             style="--animation-order: {{ forloop.index }};"
             {% endif %}>
-            <div class="collection-list-media__box">
+            <div class="collection-list-media__box tw-h-48 ">
               {% assign image_class = 'collection-list-media__image' %}
               {% assign logo_class = 'collection-list-media__logo' %}
               {{ block.settings.image | image_url: width: 500 | image_tag: loading: 'lazy', width: section.settings.image.width, class: image_class }}
