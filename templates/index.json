@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "8b0cdd20-cf50-4e35-9655-0256d81df2c3": {
@@ -47,7 +56,7 @@
         "template--21224303558932__14a60019-e425-459f-888f-3b5ef1d61624-featured_collection-2": {
           "type": "featured_collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/prueba.jpg",
+            "image": "shopify:\/\/shop_images\/fabbri-2022-1.jpg",
             "logo_image": "shopify:\/\/shop_images\/Fabbri-Logo-1.png",
             "collection": "fabbri"
           }
