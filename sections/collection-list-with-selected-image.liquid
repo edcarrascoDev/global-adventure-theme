@@ -21,7 +21,7 @@
 <div class="color-{{ section.settings.color_scheme }} gradient">
   <div class="collection-list-wrapper page-width isolate{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
     {%- unless section.settings.title == blank -%}
-      <div class=" title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+      <div class="title-wrapper--self-padded-mobile mt-0 tw-mb-4">
         <h2 id="SectionHeading-{{ section.id }}" class="collection-list-title inline-richtext center {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
           {{ section.settings.title }}
         </h2>
@@ -30,7 +30,8 @@
 
     <div class="collection-list-media{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
       <div
-        class="collection-list-media__grid {% if settings.card_style == 'standard' %} contains-card--standard{% endif %} grid grid-cols-{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down collection-list--{{ section.blocks.size }}-items"
+        class="collection-list-media__grid {% if settings.card_style == 'standard' %} contains-card--standard{% endif %} tw-grid md:tw-grid-cols-{{ section.settings.columns_desktop }} tw-grid-cols-{{ section.settings.columns_mobile }} tw-gap-2 collection-list--{{ section.blocks.size }}-items"
+        data-class="md:tw-grid-cols-3 md:grid-cols-2 md:tw-grid-cols-2 md:tw-grid-cols-1 tw-grid-cols-1 tw-grid-cols-2 tw-grid-cols-3"
         id="Slider-{{ section.id }}"
         role="list">
         {%- liquid
@@ -42,7 +43,7 @@
         {%- for block in section.blocks -%}
           <div
             id="Slide-{{ section.id }}-{{ forloop.index }}"
-            class="collection-list-media__item grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            class="collection-list-media__item tw-h-48 {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
             {{ block.shopify_attributes }}
             {% if settings.animations_reveal_on_scroll %}
             data-cascade
@@ -56,8 +57,8 @@
                 {% if block.settings.logo_image != blank %}
                   {{ block.settings.logo_image | image_url: width: 400 | image_tag: loading: 'lazy', width: section.settings.image.width, class: logo_class }}
                 {% endif %}
-                <a class="collection-list-media__action" href="{{ block.settings.collection.url }}">Ver productos
-                  <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
+                <a class="collection-list-media__action tw-flex tw-items-center tw-gap-1" href="{{ block.settings.collection.url }}">Ver productos
+                 <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                 </a>
 
               </div>
