@@ -345,10 +345,11 @@
   position: relative;
 }
 .select-group .icon {
+  pointer-events: none;
   position: absolute;
   right: 8px;
   top: 50%;
-  width: 16px;
+  width: 12px;
   --tw-translate-y: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
