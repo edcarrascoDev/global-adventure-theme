@@ -384,6 +384,9 @@
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 .select-field:focus-visible {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   outline-offset: 0px;
 }
 
