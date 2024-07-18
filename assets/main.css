@@ -357,7 +357,7 @@
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 .select-field:hover {
-  opacity: 0.05;
+  opacity: 0.9;
 }
 .select-field {
   padding: 10px;
